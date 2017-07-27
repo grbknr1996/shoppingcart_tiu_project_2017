@@ -13,7 +13,9 @@ namespace shoppingcart_tiu_project_2017
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
-
+            //custom added on 26/07/2017 to use only one line for both jquery and bootstrap
+            bundles.Add(new ScriptBundle("~/bundles/scripts").Include(
+                        "~/Scripts/jquery-{version}.js", "~/Scripts/bootstrap.js"));
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at https://modernizr.com to pick only the tests you need.
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
