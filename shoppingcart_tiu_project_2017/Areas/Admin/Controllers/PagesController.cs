@@ -24,6 +24,13 @@ namespace shoppingcart_tiu_project_2017.Areas.Admin.Controllers
             }
             //RETURN VIEW WITH LIST
             return View(pagesList);
+
+        }
+        //GET:Admin/Pages/AddPage
+        public ActionResult AddPage()
+
+        {
+            return View();
         }
     }
 }
