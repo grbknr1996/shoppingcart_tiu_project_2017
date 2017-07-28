@@ -9,5 +9,6 @@ namespace shoppingcart_tiu_project_2017.Models.Data
     public class Db :DbContext
     {
         public DbSet<PageDTO> Pages { get; set; }
+        public DbSet<SidebarDTO> Sidebar { get; set; }
     }
 }

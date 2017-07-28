@@ -199,5 +199,61 @@ namespace shoppingcart_tiu_project_2017.Areas.Admin.Controllers
             //redirect
             return RedirectToAction("Index");
         }
+        //POST:Admin/Pages/ReoderPages/id
+        [HttpPost]
+        public void ReoderPages(int[] id)
+        {
+            using (Db db = new Db())
+            {
+                //set init count
+                int count = 1;
+                //declare pageDto
+                PageDTO dto;
+                //set sorting for each page
+                foreach(var pageId in id)
+                {
+                    dto = db.Pages.Find(pageId);
+                    dto.Sorting = count;
+                    count++;
+                }
+            }
+        }
+        [HttpGet]
+        //GET:Admin/Pages/EditSidebar
+        public ActionResult EditSidebar()
+        {   //declare the model
+            SidebarVM model;
+            using (Db db = new Db())
+            {
+                //get the dto
+                SidebarDTO dto = db.Sidebar.Find(1);
+                //init model
+                model = new SidebarVM();
+            }
+                //return view with model
+                return View(model);
+        }
+        [HttpPost]
+        //POST:Admin/Pages/EditSidebar
+        public ActionResult EditSidebar(SidebarVM model)
+        {
+            using (Db db = new Db())
+            {
+
+
+                //get the DTO
+                SidebarDTO dto = db.Sidebar.Find(1);
+                //DTO the body
+                dto.Body = model.Body;
+
+                //save
+                db.SaveChanges();
+            }
+            //set the tempdata msg
+            TempData["SM"] = "you have edited the sidebar!";
+            //redirect
+
+            return RedirectToAction("EditSidebar");
+        }
     }
 }
