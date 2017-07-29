@@ -10,5 +10,8 @@ namespace shoppingcart_tiu_project_2017.Models.Data
     {
         public DbSet<PageDTO> Pages { get; set; }
         public DbSet<SidebarDTO> Sidebar { get; set; }
+
+        public DbSet<CategoryDTO> Categories{ get; set; }
+
     }
 }
