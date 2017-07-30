@@ -9,3 +9,10 @@ Participants<br/>
 @Rupa Rani<br/>
 @Payel Tripathi<br/>
 @Vikash Soni<br/>
+Packages that needs to be installed from references Nuget Manager
+<ul>
+<li>Entity Framework</li>
+<li>CK editor</li>
+<li>PagedList (pagination feature)<list>
+<li></li>
+</ul>
