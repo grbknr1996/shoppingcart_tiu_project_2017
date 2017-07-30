@@ -14,7 +14,7 @@ Packages that needs to be installed from references Nuget Manager
 <li>Entity Framework</li>
 <li>CK editor</li>
 <li>PagedList (pagination feature)</li>
-
+<li>Drop Zone</li>
 </ul>
 <br/>
 ©ALL RIGHTS RESERVED
