@@ -20,6 +20,8 @@ Packages that needs to be installed from references Nuget Manager
 <li>Bootstrap</li>
 <li>asp.net razor</li>
 <li>asp.net mvc</li>
+<li>Fancybox </li>
+
 
 </ul>
 <br/>
