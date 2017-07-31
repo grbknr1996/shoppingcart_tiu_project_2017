@@ -9,6 +9,9 @@ Participants<br/>
 @Rupa Rani<br/>
 @Payel Tripathi<br/>
 @Vikash Soni<br/>
+<h4>Files</h4>
+
+Install cubic font present in the font folder of the project<br/><br/>
 Packages that needs to be installed from references Nuget Manager
 <ul>
 <li>Entity Framework</li>
