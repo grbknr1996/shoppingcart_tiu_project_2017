@@ -1,0 +1,6 @@
+﻿@model shoppingcart_tiu_project_2017.Models.ViewModels.Cart.CartVM
+<div class="ajaxcart" style="color:white;">
+    Your cart: @Model.Quantity item(s) - ₹@Model.Price
+    <br />
+    @Html.ActionLink("Checkout", "Index")
+</div>

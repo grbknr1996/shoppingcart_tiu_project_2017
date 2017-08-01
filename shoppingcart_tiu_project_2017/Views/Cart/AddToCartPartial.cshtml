@@ -1,0 +1,5 @@
+﻿@model shoppingcart_tiu_project_2017.Models.ViewModels.Cart.CartVM
+  
+Your cart: @Model.Quantity item(s) - ₹@Model.Price
+<br />
+@Html.ActionLink("Checkout", "Index")
