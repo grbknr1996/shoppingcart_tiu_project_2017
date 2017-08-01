@@ -9,12 +9,20 @@ Participants<br/>
 @Rupa Rani<br/>
 @Payel Tripathi<br/>
 @Vikash Soni<br/>
+<h4>Files</h4>
+
+Install cubic font present in the font folder of the project<br/><br/>
 Packages that needs to be installed from references Nuget Manager
 <ul>
 <li>Entity Framework</li>
 <li>CK editor</li>
 <li>PagedList (pagination feature)</li>
-<li>Drop Zone</li>
+<li>Bootstrap</li>
+<li>asp.net razor</li>
+<li>asp.net mvc</li>
+<li>Fancybox </li>
+
+
 </ul>
 <br/>
 ©ALL RIGHTS RESERVED
